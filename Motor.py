@@ -1,10 +1,5 @@
 import pandas as pd
 
-# -----------------------------------------------------------------------------
-# 1) BASE DE HECHOS: la tabla de vehículos, embebida directamente en el código
-#    (antes vivía en vehiculos.csv; la pasamos a una lista de diccionarios
-#    para que el script no dependa de ningún archivo externo).
-# -----------------------------------------------------------------------------
 VEHICULOS = [
     {"id": 1, "marca": 'Renault', "modelo": 'Kwid', "precio": 54.9, "rango_presupuesto": '50M-60M', "proposito_principal": 'Urbano', "proposito_secundario": 'Trabajo', "tecnologia": 'Combustión', "terreno": 'Pavimento', "pasajeros": 5, "tipo_vehiculo": 'Hatchback', "transmision": 'Mecánica', "consumo": 'Bajo'},
     {"id": 2, "marca": 'Kia', "modelo": 'Picanto', "precio": 56.99, "rango_presupuesto": '50M-60M', "proposito_principal": 'Urbano', "proposito_secundario": 'Trabajo', "tecnologia": 'Combustión', "terreno": 'Pavimento', "pasajeros": 5, "tipo_vehiculo": 'Hatchback', "transmision": 'Mecánica', "consumo": 'Bajo'},
