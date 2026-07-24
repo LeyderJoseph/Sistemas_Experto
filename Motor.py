@@ -1,15 +1,3 @@
-# =============================================================================
-# MOTOR DE INFERENCIA - SISTEMA EXPERTO DE RECOMENDACIÓN DE VEHÍCULOS
-# =============================================================================
-# Profe, así quedó estructurado el motor: la idea central es que NO comparamos
-# "vehículo ideal vs. vehículo real" con un simple if/else en cascada, sino que
-# cada regla SI-ENTONCES le asigna una CALIFICACIÓN PARCIAL a cada vehículo.
-# Al final sumamos esas calificaciones (el "puntaje") y ordenamos: el Top 3
-# es simplemente el ranking descendente. Esto es lo que en sistemas expertos
-# se llama "encadenamiento hacia adelante" (forward chaining) con una base
-# de reglas ponderada, en vez de un árbol de decisión rígido.
-# =============================================================================
-
 import pandas as pd
 
 # -----------------------------------------------------------------------------
